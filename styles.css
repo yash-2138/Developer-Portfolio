@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Prata', serif;
+}
+.top{
+    background-color: black;
+}
+.navbar{
+    background-color: black;
+    padding: 50px 50px;
+    
+}
+
+.box1, .box2, .box3{
+    display: inline-block;
+    
+}
+
+.box1{
+    position: relative; 
+    left: 100px; 
+    
+}
+
+
+.box2 p{
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    left: 350px;
+    padding: 0px 10px;
+}
+.box3{
+    position: absolute;
+    right: 150px;    
+}
+.box3 button{
+    background-color: yellow;
+    padding: 15px 50px;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.abstract{
+    width: 40%;
+    position: relative;
+    left: 150px;
+    padding-top: 50px;
+    
+}
+
+.abstract h1{
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 3rem;
+}
+
+.abstract p{
+    font-size: 1.2rem;
+    line-height: 1.1; 
+}
+
+.logo{
+    padding: 50px 0;
+    position: relative;
+    left: 117px;
+}
+
+.logo img{
+    padding: 0 35px;
+    height: 31px;
+    
+}
+
+.left ,.right{
+    display: inline-block;
+    position: relative;
+    /* padding-top: 75px; */
+}
+
+.left{
+    left: 150px;
+    width: 35%;
+}
+.right{
+    left: 300px;
+    width: 35%;
+}
+
+.left h2, .right h2{
+    margin: 15px 0;
+    font-size: 35px;
+    font-weight: 100;
+    
+}
+
+.left p, .right p{
+    line-height: 1.5;
+    padding-bottom: 150px;
+}
+
+.mid{
+    background-color: rgb(68, 74, 94);
+    
+}
+
+.le-text{
+    display: inline-block;
+    position: relative;
+}
+.ri-text{
+    display: inline-block;
+    position: relative;
+}
+
+.le-text{
+    left: 150px;
+    width: 35%;
+    margin: 35px 0;
+    
+}
+.le-text h2, .le-text p, .ri-text p{
+    margin: 15px 0;
+}
+
+.ri-text{
+    left: 250px;
+    width: 35%;
+}
+
+.contact{
+    background-color: black;
+    position: relative;
+    left: 150px;
+    padding: 75px 0;
+    width: 30%;
+}
+
+.contact p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.contact button{
+    background-color: yellow;
+    padding: 15px 50px;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(68, 74, 94);
+    padding: 15px 0;
+}
+
+footer h3{
+    display: inline-block;
+    position: relative;
+    left: 150px;
+}
+footer .social{
+    display: inline-block;
+    position: relative;
+    left: 1000px;
+    
+}
+footer img {
+    padding:0 8px;
+}
+
+
+
