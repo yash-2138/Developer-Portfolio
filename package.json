@@ -1,0 +1,20 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "https://yash-2138.github.io/Developer-Portfolio/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yash-2138/Developer-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yash-2138/Developer-Portfolio/issues"
+  },
+  "homepage": "https://github.com/yash-2138/Developer-Portfolio#readme"
+}

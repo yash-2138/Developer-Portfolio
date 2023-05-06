@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Speeter</title>
+    <title>Yash Dhumal</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/cc0bf1f2a5.js" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
     
     <div class="navbar">
         <div class="box1">
-           <h2>Jonathan Speeter</h2>
+           <h2>Yash Dhumal</h2>
         </div>
         <div class="box2">
             <p>Articles</p>
@@ -22,7 +22,7 @@
             <p>About</p>
         </div>
         <div class="box3">
-            <button>Get in touch</button>
+            <button class="contact-btn">Get in touch</button>
         </div>
         </div>
     <div class="top">
@@ -73,9 +73,77 @@
             <button>Get in touch</button>
         </div>
     </div>
+    <div class="contact-overlay">
+        <h1>Get an Email from me</h1>
+        <div class="contact-from">
+            <form  action="post">
+                <div class="input-title">
+                    <i class="fa-regular fa-user"></i>
+                    <select id="title" name="title">
+                        <option value="Select">Select</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="First Name" class="text-name">
+                    <span>
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Last Name" class="text-name"> 
+                    </span>
+                </div>
+
+                <div class="input-email">
+                    <i class="fa-regular fa-envelope email"></i>
+                    <input type="text" placeholder="Email" class="text-email">
+                </div>
+                <div class="subject">
+                    <i class="fa-solid fa-comment"></i>
+                    <input type="text" placeholder="Need help for" class="text-subject">
+                </div>
+                <div class="detail">
+                    <i class="fa-solid fa-comment"></i>
+                    <input type="text" placeholder="Describe in detail" class="text-detail">
+                </div>
+                <div class="checkbox">
+                    <input type="radio">
+                    <label for="mail-confirmation">Send me a confirmation mail  </label>
+                </div>
+                <div class="submit-btn">
+                    <button>Submit</button>
+                </div>
+                <!-- <label for="title">Title</label>
+                <select id="title" name="title">
+                    <option value="Select">Select</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                </select>
+                <br><br>
+                <label for="name">Name</label>
+                <input type="text">
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email">
+                <br><br>
+                <label for="subject">Need help in:</label>
+                <input type="text">
+                <br><br>
+                <label for="detail">Describe in detail</label>
+                <input type="text">
+                <br><br>
+                <button>Submit</button>
+                <br><br> -->
+
+            </form>
+        </div>
+        
+    </div>
 
     <footer>
-        <h3>Jonathan Speeter</h3>
+        <h3>Yash Dhumal</h3>
         <div class="social">
             <img src="Assets/Social Icons/Twitter.svg" alt="">
             <img src="Assets/Social Icons/LinkedIn.svg" alt="">
@@ -83,6 +151,6 @@
         </div>
     </footer>
     
-
+    <script src="index.js"></script>
 </body>
 </html>

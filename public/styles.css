@@ -178,5 +178,39 @@ footer img {
     padding:0 8px;
 }
 
+.contact-overlay{
+    display: block;
+    position:absolute;
+    left: 300px;
+    top: 120px;
+    background-color: #292424;
+    width: 800px;
+    height: 600px;
+    z-index: -0.7;
+    border-radius: 20px;
+}
+.contact-overlay h1{
+    text-align: center;
+    padding-top: 20px;
+}
 
+.contact-from{
+    width: 500px;
+    padding: 25px;
 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    left: 240px;
+    
+
+}
+label{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+#title, #title option, input, button{
+    color: black;
+}
