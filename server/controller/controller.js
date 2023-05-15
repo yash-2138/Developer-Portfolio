@@ -5,8 +5,7 @@ exports.saveDetails = async(req,res)=>{
     try{
         const data = req.body.data;
         const addDet = await new visitors_info({
-            first_name: data.first_name,
-            last_name: data.last_name,
+            name: data.name,
             email: data.email,
             mobile: data.mobile,
             subject: data.sub,
@@ -29,7 +28,7 @@ exports.saveDetails = async(req,res)=>{
             to: data.email,
             // cc,              // add cc recipients here
             subject: `Thank you for your interest in working with me!`,
-            text: `Dear ${data.first_name} ${data.last_name},
+            text: `Dear ${data.name},
 
             I hope this email finds you well. I wanted to take a moment to thank you for expressing interest in getting in touch with me. As a developer, I am always excited to connect with others in the industry and explore potential opportunities to work together.
             

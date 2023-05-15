@@ -1,20 +1,16 @@
 const Sequelize = require('sequelize')
 const sequelize = require('../database/connection')
 
-module.exports  = sequelize.define("visitors_info",{
+module.exports  = sequelize.define("visitors_infos",{
     id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER(11)
     },
-    first_name:{
+    name:{
         allowNull: false,
         type: Sequelize.STRING(20),
-    },
-    last_name:{
-        allowNull: false,
-        type: Sequelize.STRING(20)
     },
     email:{
         allowNull: false,
@@ -28,5 +24,14 @@ module.exports  = sequelize.define("visitors_info",{
     },
     details:{
         type: Sequelize.STRING(500)
+    },
+    createdAt:{
+        type:Sequelize.DATE,
+        default: Date.now
+    },
+    updatedAt:{
+        type:Sequelize.DATE,
+        default: Date.now
     }
+    
 })

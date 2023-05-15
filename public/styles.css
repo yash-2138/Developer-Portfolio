@@ -179,13 +179,13 @@ footer img {
 }
 
 .contact-overlay{
-    display: block;
+    display: none;
     position:absolute;
-    left: 300px;
-    top: 120px;
+    left: 350px;
+    top: 100px;
     background-color: #292424;
     width: 800px;
-    height: 600px;
+    height: 700px;
     z-index: -0.7;
     border-radius: 20px;
 }
@@ -196,15 +196,26 @@ footer img {
 
 .contact-from{
     width: 500px;
-    padding: 25px;
-
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    position: absolute;
-    left: 240px;
-    
-
+    margin: 20px auto;
+    border: 10px solid white;
+    border-radius: 15px;
+}
+.contact-from div{
+    background-color: #080801;
+    padding: 20px;
+    text-align: center;
+}
+.contact-from div input{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+.contact-from .submit-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100px;
 }
 label{
     font-size: larger;
@@ -213,4 +224,37 @@ label{
 }
 #title, #title option, input, button{
     color: black;
+}
+.loader {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+  /* For About Page */
+
+.about-body{
+    background-color: black;
+    /* height: 1800px; */
 }

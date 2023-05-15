@@ -3,20 +3,16 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    return queryInterface.createTable('visitors_info',{
+    return queryInterface.createTable('visitors_infos',{
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER(11)
       },
-      first_name:{
+      name:{
           allowNull: false,
           type: Sequelize.STRING(20),
-      },
-      last_name:{
-          allowNull: false,
-          type: Sequelize.STRING(20)
       },
       email:{
           allowNull: false,
@@ -30,6 +26,14 @@ module.exports = {
       },
       details:{
           type: Sequelize.STRING(500)
+      },
+      createdAt:{
+          type:Sequelize.DATE,
+          default: Date.now
+      },
+      updatedAt:{
+          type:Sequelize.DATE,
+          default: Date.now
       }
     })
   },

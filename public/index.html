@@ -10,7 +10,9 @@
     <script src="https://kit.fontawesome.com/cc0bf1f2a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="loader">
+        <div class="spinner"></div>
+      </div>
     <div class="navbar">
         <div class="box1">
            <h2>Yash Dhumal</h2>
@@ -19,12 +21,12 @@
             <p>Articles</p>
             <p>Chats</p>
             <p>Awards</p>
-            <p>About</p>
+            <a href="about.html"><p>About</p></a>
         </div>
         <div class="box3">
             <button class="contact-btn">Get in touch</button>
         </div>
-        </div>
+    </div>
     <div class="top">
         <div class="abstract">
             <h1>Helping companies build better, scalable software.</h1>
@@ -32,7 +34,7 @@
         </div>
 
         <div class="logo">
-            <img src="Assets/Logos/Walmart.svg" alt="">
+            <img src="Assets/Logos/Walmart.svg" alt="fdfsdf">
             <img src="Assets/Logos/JP Morgan.svg" alt="">
             <img src="Assets/Logos/Visa.svg" alt="">
             <img src="Assets/Logos/Tinder.svg" alt="">
@@ -76,66 +78,34 @@
     <div class="contact-overlay">
         <h1>Get an Email from me</h1>
         <div class="contact-from">
-            <form  >
-                <div class="input-title">
-                    <i class="fa-regular fa-user"></i>
-                    <select id="title" name="title">
-                        <option value="Select">Select</option>
-                        <option value="Mr.">Mr.</option>
-                        <option value="Ms.">Ms.</option>
-                        <option value="Mrs.">Mrs.</option>
-                    </select>
-                </div>
+            <form name="contact"    >
+            
                 <div class="input-name">
                     <i class="fa-regular fa-user"></i>
-                    <input type="text" placeholder="First Name" class="text-name">
-                    <span>
-                        <i class="fa-regular fa-user"></i>
-                        <input type="text" placeholder="Last Name" class="text-name"> 
-                    </span>
+                    <input type="text" placeholder="First Name" class="text-name" name="name" required>
+                   
                 </div>
-
                 <div class="input-email">
                     <i class="fa-regular fa-envelope email"></i>
-                    <input type="text" placeholder="Email" class="text-email">
+                    <input type="text" placeholder="Email" class="text-email" name="email" required>
+                </div>
+                <div class="input-mobile">
+                    <i class="fa-sharp fa-regular fa-phone"></i>
+                    <input type="tel" id="mobile" placeholder="mobile" name="mobile" pattern="[0-9]{10}" class="mobile" required >
                 </div>
                 <div class="subject">
                     <i class="fa-solid fa-comment"></i>
-                    <input type="text" placeholder="Need help for" class="text-subject">
+                    <input type="text" placeholder="Need help for" class="text-subject" name="subject" required>
                 </div>
                 <div class="detail">
                     <i class="fa-solid fa-comment"></i>
-                    <input type="text" placeholder="Describe in detail" class="text-detail">
+                    <input type="text" placeholder="Describe in detail" class="text-detail" name="detail">
                 </div>
-                <div class="checkbox">
-                    <input type="radio">
-                    <label for="mail-confirmation">Send me a confirmation mail  </label>
+               
+                <div>
+                    <button  class="submit-btn">Submit</button>
                 </div>
-                <div class="submit-btn">
-                    <button>Submit</button>
-                </div>
-                <!-- <label for="title">Title</label>
-                <select id="title" name="title">
-                    <option value="Select">Select</option>
-                    <option value="Mr.">Mr.</option>
-                    <option value="Ms.">Ms.</option>
-                    <option value="Mrs.">Mrs.</option>
-                </select>
-                <br><br>
-                <label for="name">Name</label>
-                <input type="text">
-                <br><br>
-                <label for="email">Email</label>
-                <input type="email">
-                <br><br>
-                <label for="subject">Need help in:</label>
-                <input type="text">
-                <br><br>
-                <label for="detail">Describe in detail</label>
-                <input type="text">
-                <br><br>
-                <button>Submit</button>
-                <br><br> -->
+                
 
             </form>
         </div>
