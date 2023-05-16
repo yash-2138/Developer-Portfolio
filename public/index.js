@@ -1,4 +1,4 @@
-const contact = document.querySelector('.contact-btn')
+const contact = document.querySelectorAll('.contact-btn')
 const contactOverlay = document.querySelector('.contact-overlay')
 const submitBtn = document.querySelector('.submit-btn')
 
@@ -42,15 +42,21 @@ await fetch('http://127.0.0.1:8000/api/sendDetails', {
 
 
 
-contact.addEventListener('click', ()=>{
-    if(contactOverlay.style.display === 'block'){
-        contactOverlay.style.display = 'none'
-    }
-    else{
-        contactOverlay.style.display = 'block'
-    }
-    
-    
+contact.forEach((ele)=>{
+    ele.addEventListener('click', ()=>{
+        console.log("jello")
+        if(contactOverlay.style.display === 'block'){
+            contactOverlay.style.display = 'none'
+        }
+        else{
+            contactOverlay.style.display = 'block'
+        }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        
+    })
 })
 async function addDetails(data){
     alert("hello")

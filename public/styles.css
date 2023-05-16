@@ -257,4 +257,26 @@ label{
 .about-body{
     background-color: black;
     /* height: 1800px; */
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-left: 130px;
+}
+.intro, .specialization, .exp, .edu, .project, .tech-stack, .passion, .philosophy{
+    width: 900px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.intro img, .exp img, .project img, .passion img{
+    /* display: inline; */
+    padding-right: 200px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.specialization img, .edu img, .tech-stack img, .philosophy img{
+    padding-left: 20px;
+    width: 150px;
+    height: 150px;
+    float: right;
 }
