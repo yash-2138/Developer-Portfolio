@@ -42,6 +42,6 @@ app.use('/', require('./server/routes/router'))
 // app.use(express.static('public'));
 
 // Start the server
-app.listen(8000, () => {
-  console.log('Server listening on port 8000');
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
 });

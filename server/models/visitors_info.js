@@ -17,7 +17,7 @@ module.exports  = sequelize.define("visitors_infos",{
         type: Sequelize.STRING(50)
     },
     mobile:{
-        type: Sequelize.INTEGER(10)
+        type: Sequelize.INTEGER(50)
     },
     subject:{
         type: Sequelize.STRING(50)

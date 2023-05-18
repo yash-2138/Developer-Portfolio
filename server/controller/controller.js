@@ -12,7 +12,7 @@ exports.saveDetails = async(req,res)=>{
             details: data.details
         })
         const saveDet = await addDet.save()
-
+        console.log(data.mobile)
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_host, 
             port: process.env.SMTP_port, 
