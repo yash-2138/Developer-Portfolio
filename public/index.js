@@ -1,7 +1,7 @@
 const contact = document.querySelectorAll('.contact-btn')
 const contactOverlay = document.querySelector('.contact-overlay')
 const submitBtn = document.querySelector('.submit-btn')
-
+const loader = document.querySelector('.loader')
 let firstName = document.contact.name.value;
 let email = document.contact.email.value;
 let mobile = document.contact.mobile.value;
@@ -24,21 +24,25 @@ submitBtn.addEventListener('click', async (event)=>{
         sub:  subject,
         details:   detail
     }
-//    await addDetails(data)
-await fetch('http://127.0.0.1:8000/api/sendDetails', {
-        method: 'POST',
-        body: JSON.stringify({"data":data }),
-        headers: {
-            'Content-Type': 'application/json'
-        },
-    })
-    .then((res) => {
-        alert("Thank you for Connecting!! \nCheck you mail for a message from me")
-        contactOverlay.style.display = 'none'
-        location.reload()
-        loader.style.display = "none";
-    })
-})  
+   await addDetails(data)
+    await fetch('http://127.0.0.1:3000/api/sendDetails', {
+            method: 'POST',
+            body: JSON.stringify({"data":data }),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+        .then((res) => {
+            loader.style.display = "none";
+            // console.log(res)
+            contactOverlay.style.display = 'none'
+            // location.reload()
+            return res.json();
+        })
+        .then(data =>{
+            console.log(data);
+        })
+    })  
 
 
 
@@ -60,7 +64,7 @@ contact.forEach((ele)=>{
 })
 async function addDetails(data){
     alert("hello")
-    await fetch('http://127.0.0.1:8000/api/sendDetails', {
+    await fetch('http://127.0.0.1:3000/api/sendDetails', {
         method: 'POST',
         body: JSON.stringify({"data":data }),
         headers: {
